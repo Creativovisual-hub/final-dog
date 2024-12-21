@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta a tu Perrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-purple py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo fw-bold text-white">🐾 Adopta un Amigo</div>
+            <div>
+                <button class="btn btn-yellow fw-bold me-2">Hazte adoptante</button>
+                <button class="btn btn-outline-light fw-bold">Contáctanos</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Slider -->
+    <section id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/depositphotos_478192206-stock-photo-brown-thai-dog-sleeping-smiling.jpg" class="d-block w-100" alt="Perrito feliz">
+                <div class="carousel-caption">
+                    <h2>Encuentra a tu mejor amigo</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/dogs-background-lw584jj85npdc6w6.jpg" class="d-block w-100" alt="Adopta amor">
+                <div class="carousel-caption">
+                    <h2>Adoptar es salvar una vida</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/vista-frontal-hermoso-perro-espacio-copia_23-2148786562.avif" class="d-block w-100" alt="Perritos buscan hogar">
+                <div class="carousel-caption">
+                    <h2>Ellos te esperan con amor</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Adopta a tu perrito</h1>
+            <p class="lead mb-4">Conoce a tu próximo compañero de vida</p>
+            <div class="search-bar mx-auto">
+                <label for="raza" class="search-label">Selecciona una raza:</label>
+                <select id="raza" class="search-select">
+                    <option value="" disabled selected>Selecciona</option>
+                </select>
+                <button id="btnBuscar" class="search-button">Buscar →</button>
+            </div>
+            <div id="mensajeError" class="mensaje-error hidden mt-3">Por favor, selecciona una raza para continuar.</div>
+
+            <!-- Imagen del perro y botón "Adoptar" -->
+            <div class="results-container mt-4 hidden" id="resultadoPerro">
+                <img id="imagenPerro" src="" alt="Imagen del perrito" class="img-fluid rounded mb-3">
+                <button id="btnAdoptar" class="btn btn-yellow fw-bold">Adoptar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="adoptModal" tabindex="-1" aria-labelledby="adoptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adoptModalLabel">Información para Adopción</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formAdopcion">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rut" class="form-label">RUT</label>
+                            <input type="text" id="rut" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" id="ciudad" class="form-control" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-yellow" id="btnModalAdoptar">Adoptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="fw-bold mb-3">🐾 Adopta un Amigo</div>
+            <p>Estamos aquí para ayudar a cada perrito a encontrar un hogar amoroso y seguro.</p>
+            <small>© Adopta un Amigo - Todos los derechos reservados</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perrito Adoptado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero-section text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <img id="imagenAdoptada" src="" alt="Perrito Adoptado" class="img-fluid rounded mb-4">
+        <h1 class="display-4 fw-bold">¡Perrito Adoptado con Éxito! 🎉</h1>
+        <p class="lead" id="mensajeAdopcion"></p>
+        <a href="index.html">
+            <button class="btn btn-yellow mt-4">Volver a la página principal</button>
+        </a>
+    </section>
+
+    <script>
+        // Mostrar información desde localStorage
+        const imagenUrl = localStorage.getItem('imagenAdoptada');
+        const nombreUsuario = localStorage.getItem('nombreUsuario');
+        const ciudadUsuario = localStorage.getItem('ciudadUsuario');
+        const imagenElement = document.getElementById('imagenAdoptada');
+        const mensajeAdopcion = document.getElementById('mensajeAdopcion');
+
+        if (imagenUrl) {
+            imagenElement.src = imagenUrl;
+        } else {
+            imagenElement.alt = "No se encontró la imagen del perro adoptado.";
+            imagenElement.style.display = "none";
+        }
+
+        if (nombreUsuario && ciudadUsuario) {
+            mensajeAdopcion.textContent = `¡Gracias ${nombreUsuario} por adoptar desde ${ciudadUsuario}!`;
+        } else {
+            mensajeAdopcion.textContent = "¡Gracias por adoptar!";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

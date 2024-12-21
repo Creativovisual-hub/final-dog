@@ -1,0 +1,214 @@
+/* Importar tipografía Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #a75fa1;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #6a3d78;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-yellow {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+
+/* Slider */
+#bannerSlider .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #a75fa1;
+    padding: 3rem 0;
+}
+
+.search-bar {
+    display: flex;
+    background-color: #2b1c35;
+    border-radius: 8px;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-label {
+    color: #bbb;
+    font-weight: 400;
+}
+
+.search-select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    padding: 0.5rem;
+    outline: none;
+    flex: 1;
+}
+
+.search-select:focus {
+    border-bottom: 1px solid #ffcc00;
+}
+
+.search-button {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e6b800;
+}
+
+/* Mensaje de error */
+.mensaje-error {
+    color: #ffcc00;
+    font-weight: 600;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Estilos del modal */
+.modal-content {
+    background-color: #2b1c35; /* Morado oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #fff; /* Texto blanco */
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 1.5rem;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ffcc00; /* Línea inferior amarilla */
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal-body label {
+    font-weight: 600;
+    color: #ddd; /* Texto gris claro */
+}
+
+.modal-body input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #444; /* Línea inferior gris */
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.modal-body input:focus {
+    outline: none;
+    border-bottom: 2px solid #ffcc00; /* Línea inferior amarilla al enfocar */
+}
+
+.modal-footer {
+    border-top: 1px solid #ffcc00; /* Línea superior amarilla */
+}
+
+.modal-footer .btn {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.modal-footer .btn-yellow {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+}
+
+.modal-footer .btn-yellow:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.mensaje-error {
+    color: #ffcc00; /* Amarillo para destacar */
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    display: none; /* Oculto por defecto */
+}
+
+.mensaje-error.hidden {
+    display: none;
+}
+
+.mensaje-error:not(.hidden) {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
